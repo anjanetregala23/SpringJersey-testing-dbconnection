@@ -1,4 +1,4 @@
-package com.springjersey.test.SpringJersey;
+package com.ParkU.au;
 
 
 import java.net.UnknownHostException;
