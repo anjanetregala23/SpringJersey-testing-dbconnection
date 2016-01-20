@@ -15,17 +15,9 @@ public class ConnectMongoDB {
 		try {
 			MongoClient mongo = new MongoClient("localhost", 12707);
 			DB db = mongo.getDB("mydb");
+			System.out.println("Connect successfully");
 			DBCollection table = db.getCollection("employee_collections");
 			
-			
-			/**** Insert ****/
-			// create a document to store key and value
-			BasicDBObject document = new BasicDBObject();
-			document.put("name", "janet");
-			document.put("age", 30);
-			document.put("createdDate", new Date());
-			table.insert(document);
-
 			}
 			catch (Exception e) {
 			System.err
